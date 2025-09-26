@@ -93,7 +93,7 @@ MonoBehaviour:
       - m_Id: 1207401d1c939784995677284842ebec
         m_Value: <undefined>
       - m_Id: 91cb55b318490524ba2931ca9b559c69
-        m_Value: 'ServerData/[BuildTarget]'
+        m_Value: 'CDN/Addressables/Prod/WebGL ServerData/[BuildTarget]'
       - m_Id: acf7d44c8e625084ca84b2ef99c6b624
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: b2b30952abe639d42b68b2a3d722dbe4
