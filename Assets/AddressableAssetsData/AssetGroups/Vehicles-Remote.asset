@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Vehicles-Remote
+  m_EditorClassIdentifier: 
+  m_GroupName: Vehicles-Remote
+  m_GUID: dbf7af748942ed24bafc0976f08e6e7f
+  m_SerializeEntries:
+  - m_GUID: d592c3929200ccf49bfa1368d4eec1ff
+    m_Address: Veh 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6f2978ce0c4220429833ed68c1757e4
+    m_Address: Veh 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: dcf84ae93cfb3d34096ee8084704a12f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 970a3c6e288f7b0458c0dbfa02c52ad7, type: 2}
+    - {fileID: 11400000, guid: 77218b61dd4b4ea40a457152fbb4b08e, type: 2}
