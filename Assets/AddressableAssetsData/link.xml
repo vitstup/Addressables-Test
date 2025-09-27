@@ -2,6 +2,7 @@
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="LoadingScreen" preserve="all" />
     <type fullname="MonoSceneLoader" preserve="all" />
+    <type fullname="SimpleGameplaySimulation" preserve="all" />
     <type fullname="SimpleInitialLoader" preserve="all" />
     <type fullname="Startup" preserve="all" />
     <type fullname="Unloader" preserve="all" />
