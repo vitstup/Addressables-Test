@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 3cdf294381708214c9318a8b5669b65f
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: f338a220ec3c26fcd7966315d92e854d
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_BundleRetryCount: 0
   m_BundleRedirectLimit: -1
   m_SharedBundleSettings: 0
-  m_SharedBundleSettingsCustomGroupIndex: 0
+  m_SharedBundleSettingsCustomGroupIndex: 2
   m_ContiguousBundles: 1
   m_StripUnityVersionFromBundleBuild: 0
   m_DisableVisibleSubAssetRepresentations: 0
@@ -50,9 +50,9 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: b2b30952abe639d42b68b2a3d722dbe4
+    m_Id: 91cb55b318490524ba2931ca9b559c69
   m_RemoteCatalogLoadPath:
-    m_Id: e28a6bab924993f4083477188813332a
+    m_Id: 1207401d1c939784995677284842ebec
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
