@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 1
+  m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
   m_InternalIdNamingMode: 0
@@ -77,9 +77,9 @@ MonoBehaviour:
       m_ProfileName: Default
       m_Values:
       - m_Id: 1207401d1c939784995677284842ebec
-        m_Value: <undefined>
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
       - m_Id: 91cb55b318490524ba2931ca9b559c69
-        m_Value: 'ServerData/[BuildTarget]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: acf7d44c8e625084ca84b2ef99c6b624
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: b2b30952abe639d42b68b2a3d722dbe4
@@ -99,7 +99,7 @@ MonoBehaviour:
       - m_Id: b2b30952abe639d42b68b2a3d722dbe4
         m_Value: 'CDN/Local/Prod/[BuildTarget]'
       - m_Id: e28a6bab924993f4083477188813332a
-        m_Value: 'CDN/Local/Prod/[BuildTarget]'
+        m_Value: 'https://vitstup.github.io/Addressables-Test/CDN/Local/Prod/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: cf970256f24c35c488875d136bd60049
       m_ProfileName: Staging
@@ -111,9 +111,9 @@ MonoBehaviour:
       - m_Id: acf7d44c8e625084ca84b2ef99c6b624
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: b2b30952abe639d42b68b2a3d722dbe4
-        m_Value: 'CDN/Local/Stag/[BuildTarget]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: e28a6bab924993f4083477188813332a
-        m_Value: 'CDN/Local/Stag/[BuildTarget]'
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: faceea160fde06545b0eccbcef56c175
       m_ProfileName: 'Development '
@@ -125,9 +125,9 @@ MonoBehaviour:
       - m_Id: acf7d44c8e625084ca84b2ef99c6b624
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
       - m_Id: b2b30952abe639d42b68b2a3d722dbe4
-        m_Value: 'CDN/Local/Dev/[BuildTarget]'
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: e28a6bab924993f4083477188813332a
-        m_Value: 'CDN/Local/Dev/[BuildTarget]'
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
     m_ProfileEntryNames:
     - m_Id: 1207401d1c939784995677284842ebec
       m_Name: Remote.LoadPath
@@ -160,4 +160,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c293280b3d65dee409575975cf0ef458, type: 2}
   - {fileID: 11400000, guid: b6b30d04f08b47f41a440b79189f411b, type: 2}
   - {fileID: 11400000, guid: 56d7c5e20b960254a836babadf82afee, type: 2}
-  m_ActiveProfileId: 47d02d257c6fb7747a060c2b8bb7d960
+  m_ActiveProfileId: 09feac373436b3e419e4717b0ad95e19

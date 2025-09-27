@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Group: {fileID: 11400000, guid: d6932d71a3ab41844a6c1ca6b38b3779, type: 2}
   m_InternalBundleIdMode: 1
-  m_Compression: 2
+  m_Compression: 0
   m_IncludeAddressInCatalog: 1
   m_IncludeGUIDInCatalog: 1
   m_IncludeLabelsInCatalog: 1
