@@ -1,6 +1,6 @@
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 
 public interface IUnloadeble
 {
-    public Task Unload();
+    public UniTask Unload();
 }

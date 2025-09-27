@@ -1,4 +1,4 @@
-using System.Collections;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,16 +8,16 @@ public class LoadingScreen : MonoBehaviour
 
     public void Load(IAsyncOperation operation)
     {
-        StartCoroutine(UpdateProgress(operation));
+        _ = UpdateProgress(operation);
     }
 
-    private IEnumerator UpdateProgress(IAsyncOperation operation)
+    private async UniTask UpdateProgress(IAsyncOperation operation)
     {
         while (!operation.isDone)
         {
             float progress = operation.progress;
             fill.fillAmount = progress;
-            yield return null;
+            await UniTask.WaitForEndOfFrame();
         }
     }
 }

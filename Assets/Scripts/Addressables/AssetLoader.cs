@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -12,14 +13,14 @@ public class AssetLoader : IUnloadeble
 
     private string assetId;
 
-    public async Task<GameObject> Load(string assetId)
+    public async UniTask<GameObject> Load(string assetId)
     {
         try
         {
             this.assetId = assetId;
             
             var sizeHandle = Addressables.GetDownloadSizeAsync(assetId);
-            await sizeHandle.Task;
+            await sizeHandle.ToUniTask();
             long size = sizeHandle.Status == AsyncOperationStatus.Succeeded ? sizeHandle.Result : -1;
             Addressables.Release(sizeHandle);
 
@@ -29,7 +30,10 @@ public class AssetLoader : IUnloadeble
             Stopwatch sw = Stopwatch.StartNew();
 
             var handle = Addressables.InstantiateAsync(assetId);
-            cached = await handle.Task;
+
+            await handle.ToUniTask();
+
+            cached = handle.Result;
 
             sw.Stop();
 
@@ -47,7 +51,7 @@ public class AssetLoader : IUnloadeble
         }
     }
 
-    public async Task<T> Load<T>(string assetId)
+    public async UniTask<T> Load<T>(string assetId)
     {
         await Load(assetId);
 
@@ -57,7 +61,7 @@ public class AssetLoader : IUnloadeble
         return comp;
     }
 
-    public async Task Unload()
+    public async UniTask Unload()
     {
         UnloadInternal();
     }

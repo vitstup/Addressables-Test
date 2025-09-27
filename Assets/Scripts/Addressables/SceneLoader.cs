@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
-using System.Threading.Tasks;
-using UnityEngine;
+using Cysharp.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
@@ -13,12 +12,12 @@ public class SceneLoader : IUnloadeble
 
     private SceneInstance scene;
 
-    public async Task Load(string sceneAddress)
+    public async UniTask Load(string sceneAddress)
     {
         try
         {
             var sizeHandle = Addressables.GetDownloadSizeAsync(sceneAddress);
-            await sizeHandle.Task;
+            await sizeHandle.ToUniTask();
             long size = sizeHandle.Status == AsyncOperationStatus.Succeeded ? sizeHandle.Result : -1;
             Addressables.Release(sizeHandle);
 
@@ -36,11 +35,11 @@ public class SceneLoader : IUnloadeble
 
             loadingScreen.Load(new SceneLoadingAsyncOperation(handle));
 
-            scene = await handle.Task;
+            scene = await handle.ToUniTask();
 
-            await Task.Delay(300);
+            await UniTask.Delay(300);
 
-            await handle.Result.ActivateAsync();
+            await handle.Result.ActivateAsync().ToUniTask();
 
             sw.Stop();
 
@@ -57,17 +56,17 @@ public class SceneLoader : IUnloadeble
         }
     }
 
-    public async Task Unload()
+    public async UniTask Unload()
     {
         await UnloadScene();
     }
 
-    private async Task UnloadScene()
+    private async UniTask UnloadScene()
     {
         var sceneName = scene.Scene.name;
 
         var op = Addressables.UnloadSceneAsync(scene);
-        await op.Task;
+        await op.ToUniTask();
 
         Debug.Log($"Scene {sceneName} was unloaded");
     }

@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class SimpleInitialLoader : MonoBehaviour
@@ -26,7 +26,7 @@ public class SimpleLoadAssetData
     [field: SerializeField] public string key { get; private set; }
     [field: SerializeField] public Transform parent { get; private set; }
 
-    public async Task<AssetLoader> Load()
+    public async UniTask<AssetLoader> Load()
     {
         var loader = new AssetLoader();
         var obj = await loader.Load(key);
